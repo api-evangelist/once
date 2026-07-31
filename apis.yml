@@ -1,7 +1,24 @@
 aid: once
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/once.png
 name: Once
-description: 'Once is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Once (getonce.com) is a consumer chat and connection platform positioned as an alternative
+  to traditional dating apps, offering a pressure-free space for people seeking meaningful connections,
+  improved social skills, and guidance in their personal lives. The mobile app surfaces a small number
+  of daily matches based on shared interests and vibes, lets users join communities of like-minded people,
+  and runs a rewards system called Sparks that members earn and spend on gifts and chat features. Once is
+  a Consumer-sector portfolio company of the venture firm Partech. It ships as a consumer mobile application
+  and does not currently expose a public developer API, developer portal, or API documentation.'
 url: https://raw.githubusercontent.com/api-evangelist/once/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Dating
+- Social
+- Chat
+- Mobile
+- Communities
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +44,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/once-domain-security.yml
 - type: Website
   url: https://getonce.com/
+- type: Blog
+  url: https://dating-expert.medium.com/
+- type: TermsOfService
+  url: https://www.getonce.com/terms-and-conditions/
+- type: PrivacyPolicy
+  url: https://www.getonce.com/policy/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
